@@ -1,10 +1,14 @@
 import Foundation
 
 extension String {
-    
+    func anotherContains(_ string: NSString) -> Bool {
+        
+    return  localizedCaseInsensitiveContains("\(string)")
+    }
 }
 
 
+    
 // test cases
 print("Where is WaLdO".anotherContains("WALDO")) // true
 print("Where is WaLdO".anotherContains("where")) // true
